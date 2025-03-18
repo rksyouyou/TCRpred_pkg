@@ -58,7 +58,7 @@ str(out)
    .. ..@ x       : num [1:500] 0.2542 0.5479 0.0058 0.4412 0.578 ...
    .. ..@ factors : list()
 ```
-## Interpretation of `TCRpred` Results
+**Interpretation of `TCRpred` Results**
 
 The **TCRpred** function was run using **500 training samples** with specified covariates, TCR features, and similarity matrices. The output is a **list containing two key components**:  
 
@@ -68,7 +68,7 @@ The **TCRpred** function was run using **500 training samples** with specified c
   - The `Dimnames` attribute assigns **subject IDs** as row names (e.g., `"TCGA-OR-A5JJ-01A-11R-A29S-07"`).
   - The `x` slot contains the **predicted probability values** (ranging from 0 to 1), where **higher values** indicate a greater likelihood of the outcome being `1`.
 
-### **Key Insights**
+**Key Insights**
 - The model **outputs probability scores** rather than binary classifications, allowing flexibility in choosing thresholds.
 - A **subject with `Y_pred` > 0.5** is predicted as **likely belonging to the `1` class**, while **values < 0.5 suggest class `0`**.
 - Sparse matrix storage (`dgeMatrix`) is used for efficiency in large datasets.
@@ -83,7 +83,7 @@ eva_metric(out$Y_true, out$Y_pred)
 0.6095238  0.7341772  0.2920000  0.7065732
 ```
 
-## Evaluation of Prediction Accuracy
+**Evaluation of Prediction Accuracy**
 
 The `eva_metric` function was used to assess the predictive performance of **TCRpred** by comparing the predicted probabilities (`Y_pred`) to the true binary outcomes (`Y_true`). The results provide key classification performance metrics:
 
