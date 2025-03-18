@@ -87,10 +87,10 @@ eva_metric(out$Y_true, out$Y_pred)
 
 The `eva_metric` function was used to assess the predictive performance of **TCRpred** by comparing the predicted probabilities (`Y_pred`) to the true binary outcomes (`Y_true`). The results provide key classification performance metrics:
 
-- **PPV (Positive Predictive Value)**: `0.6095`. This represents **precision**, indicating that **60.95% of the predicted positive cases (class 1) are truly positive**.
+- PPV (Positive Predictive Value): `0.6095`. This represents **precision**, indicating that **60.95% of the predicted positive cases (class 1) are truly positive**.
   
-- **NPV (Negative Predictive Value)**: `0.7342`. This measures how well the model predicts negative cases, showing that **73.42% of the predicted negatives (class 0) are truly negative**.
+- NPV (Negative Predictive Value): `0.7342`. This measures how well the model predicts negative cases, showing that **73.42% of the predicted negatives (class 0) are truly negative**.
 
-- **Classification Error**: `0.2920`. The overall error rate, meaning **29.2% of predictions were incorrect**.
+- Classification Error: `0.2920`. The overall error rate, meaning **29.2% of predictions were incorrect**.
 
-- **AUC (Area Under the ROC Curve)**: `0.7066`. The AUC score of **0.71** indicates **moderate predictive ability**, suggesting that the model performs better than random guessing but has room for improvement.
+- AUC (Area Under the ROC Curve): `0.7066`. The AUC score of **0.71** indicates **moderate predictive ability**, suggesting that the model performs better than random guessing but has room for improvement.
